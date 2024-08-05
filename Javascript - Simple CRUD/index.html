@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="https://sourcecodester.com">Sourcecodster</a>
+		</div>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">Javascript - Simple CRUD</h3>
+		<hr style="border-top:1px dotted #ccc;"/>
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<form action="javascript:void(0);" method="POST" class="form-inline" onsubmit="Add()">
+				<label>Name:</label>
+				<input type="text" id="name" class="form-control"/>
+				<button type="submit" class="btn btn-primary form-control"><span class="glyphicon glyphicon-plus"></span> Add</button>
+			</form>
+			<br />
+			<div id="edit">	
+				<form action="javascript:void(0);" method="POST" class="form-inline" id="update">
+					<label>Name:</label>
+					<input type="text" id="edit_name" class="form-control"/>
+					<button type="submit" class="btn btn-warning form-control"><span class="glyphicon glyphicon-update"></span> Update</button> <a class="btn btn-danger" onclick="Close()" aria-label="Close">&#10006;</a>
+				</form>
+			</div>
+			<br />
+			<table class="table table-bordered">
+				<thead>	
+					<tr>
+						<th>Name</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody id="name_list">
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+<script src="js/script.js"></script>
+</html>
